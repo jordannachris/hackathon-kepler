@@ -1,29 +1,31 @@
 <template>
   <div class="app-tab-bar">
-    <v-bottom-navigation v-model="value">
-      <v-btn value="home" color="transparent">
-        <span>Início</span>
+    <v-bottom-navigation app v-model="value">
+      <router-link to="/">
+        <v-btn value="home" color="transparent">
+          <span>Início</span>
+          <v-icon color="#989899">mdi-home</v-icon>
+        </v-btn>
+      </router-link>
 
-        <v-icon color="#989899">mdi-home</v-icon>
-      </v-btn>
+      <router-link to="/sobre">
+        <v-btn value="sobre" color="transparent">
+          <span>Sobre</span>
+          <v-icon color="#989899">mdi-information</v-icon>
+        </v-btn>
+      </router-link>
 
-      <v-btn value="sobre" color="transparent">
-        <span>Sobre</span>
+      <router-link to="/ondeencontrar">
+        <v-btn value="onde-encontrar" color="transparent" >
+          <span>Nearby</span>
+          <v-icon color="#989899">mdi-cart</v-icon>
+        </v-btn>
+      </router-link>
 
-        <v-icon color="#989899">mdi-information</v-icon>
-      </v-btn>
-
-      <v-btn value="onde-encontrar" color="transparent">
-        <span>Nearby</span>
-
-        <v-icon color="#989899">mdi-cart</v-icon>
-      </v-btn>
     </v-bottom-navigation>
   </div>
 </template>
   
-
-
 <script>
 export default {
   name: "AppTabBar",
@@ -31,9 +33,8 @@ export default {
 };
 </script>
 
-
 <style scoped>
-.app-tap-bar {
+.app-tab-bar a {
   text-decoration: none;
 }
 
