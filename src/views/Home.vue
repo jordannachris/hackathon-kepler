@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <h2>Teste</h2>
-  </div>
+  <v-container>
+      <div class="home">Teste</div>
+  </v-container>
 </template>
 
 <script>
