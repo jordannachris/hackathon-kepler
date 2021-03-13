@@ -1,35 +1,35 @@
 <template>
   <v-container>
-    <div class="text-center ondeencontrar--botaocidades">
+    <div class="text-center macapa">
       <v-col cols="6">
         <v-card>
-          <v-img :src="dadosAPI[0].imagem" class="grey darken-4"></v-img>
+          <v-img :src="dadosAPI[7].imagem" class="grey darken-4"></v-img>
           <v-card-title class="title">
-            <span>Nome: {{ dadosAPI[0].nome }}</span>
-            <span>Valor: {{ dadosAPI[0].preco }}</span>
-            <span>Valor: {{ dadosAPI[0].preco }}</span>
+            <span>Nome: {{ dadosAPI[7].nome }}</span>
+            <span>Valor: {{ dadosAPI[7].preco }}</span>
+            <span>Valor: {{ dadosAPI[7].preco }}</span>
           </v-card-title>
 
           <v-btn>Comprar</v-btn>
         </v-card>
 
         <v-card>
-          <v-img :src="dadosAPI[1].imagem" class="grey darken-4"></v-img>
+          <v-img :src="dadosAPI[8].imagem" class="grey darken-4"></v-img>
           <v-card-title class="title">
-            <span>Nome: {{ dadosAPI[1].nome }}</span>
-            <span>Valor: {{ dadosAPI[1].preco }}</span>
-            <span>Valor: {{ dadosAPI[1].preco }}</span>
+            <span>Nome: {{ dadosAPI[8].nome }}</span>
+            <span>Valor: {{ dadosAPI[8].preco }}</span>
+            <span>Valor: {{ dadosAPI[8].preco }}</span>
           </v-card-title>
 
           <v-btn>Comprar</v-btn>
         </v-card>
 
         <v-card>
-          <v-img :src="dadosAPI[2].imagem" class="grey darken-4"></v-img>
+          <v-img :src="dadosAPI[9].imagem" class="grey darken-4"></v-img>
           <v-card-title class="title">
-            <span>Nome: {{ dadosAPI[2].nome }}</span>
-            <span>Valor: {{ dadosAPI[2].preco }}</span>s
-            <span>Valor: {{ dadosAPI[2].preco }}</span>
+            <span>Nome: {{ dadosAPI[9].nome }}</span>
+            <span>Valor: {{ dadosAPI[9].preco }}</span>s
+            <span>Valor: {{ dadosAPI[9].preco }}</span>
           </v-card-title>
 
           <v-btn>Comprar</v-btn>
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: "OndeEncontrar",
+  name: "Macapa",
   data() {
     return {
       dadosAPI: [],
@@ -59,6 +59,4 @@ export default {
 </script>
 
 <style scoped>
-.img-ovo {
-}
 </style>
