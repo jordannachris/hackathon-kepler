@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Home/>
+    
     <v-main>
       <router-view></router-view>
     </v-main>
@@ -8,12 +8,10 @@
 </template>
 
 <script>
-import Home from './views/Home'
+
 
 export default {
-  name: 'Home',
-  components: { Home },
-
+  
   data: () => ({
     //
   }),

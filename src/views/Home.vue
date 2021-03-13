@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
-  </div>
+  <v-container>
+      <div class="home">Teste</div>
+  </v-container>
 </template>
 
 <script>
