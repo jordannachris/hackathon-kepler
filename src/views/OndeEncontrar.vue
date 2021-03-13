@@ -14,10 +14,10 @@
                     </template>
                     <v-list>
                         <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
+                        v-for="dado of dadosAPI"
+                        :key="dado.id"
                         >
-                        <v-list-item-title>{{ item.local[1] }}</v-list-item-title>
+                        <v-list-item-title>{{ [0].nome }}</v-list-item-title>
                         </v-list-item>
                     </v-list>
                 </v-menu>
