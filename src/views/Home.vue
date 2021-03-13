@@ -28,5 +28,6 @@ export default {
 
   .home--titulo {
     padding-top: 70px;
+    font-family: 'Montserrat', sans-serif;
   }
 </style>
