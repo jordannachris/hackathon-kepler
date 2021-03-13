@@ -1,6 +1,6 @@
 <template>
   <div class="app-tab-bar">
-    <v-bottom-navigation app v-model="value">
+    <v-bottom-navigation app v-model="value" class="pt-2">
       <router-link to="/">
         <v-btn value="home" color="transparent">
           <span>Início</span>
@@ -17,7 +17,7 @@
 
       <router-link to="/ondeencontrar">
         <v-btn value="onde-encontrar" color="transparent" >
-          <span>Nearby</span>
+          <span>Onde Comprar</span>
           <v-icon color="#989899">mdi-cart</v-icon>
         </v-btn>
       </router-link>
