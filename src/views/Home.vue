@@ -1,6 +1,18 @@
 <template>
   <v-container>
-      <div class="home">Teste</div>
+      <div class="home">
+        <h1 class="text-center mb-10 home--titulo" >
+            Ovos de Páscoa
+        </h1>
+        <v-img 
+            class="home-imagem mb-4"
+            src="https://1.bp.blogspot.com/-R76sXgykRlw/Vvabq_f-nrI/AAAAAAAA8tM/2a0Wavo9gFQogRlQhtJAQ5lCRAS6dyCqw/s1600/historia%2Bdos%2Bovos%2Bde%2Bp%25C3%25A1scoa%2B%25281%2529.png">
+        </v-img>
+
+        <p class="text-center mt-10"> 
+        Bla Bla Bla Ovos
+        </p>
+      </div>
   </v-container>
 </template>
 
@@ -14,5 +26,11 @@ export default {
 </script>
 
 <style scoped>
+  .home-imagem {
+      border-radius: 5px;
+    }
 
+  .home--titulo {
+    padding-top: 70px;
+  }
 </style>
