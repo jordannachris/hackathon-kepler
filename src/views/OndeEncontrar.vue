@@ -4,8 +4,7 @@
                 <v-menu offset-y>
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn
-                        color="primary"
-                        dark
+                        color="blue lighten-3"
                         v-bind="attrs"
                         v-on="on"
                         >
