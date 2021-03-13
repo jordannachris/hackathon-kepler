@@ -20,7 +20,16 @@
                         </v-list-item>
                     </v-list>
                 </v-menu>
-                
+
+                <tr v-for="dado of dadosAPI" :key="dado.id">
+                    <td>
+                        <v-avatar>
+                            <img :src="dado.imagem" alt="Ovo">
+                        </v-avatar>
+                        <span>{{ dado.local }}</span>
+                        <span>{{ dado.preco }}</span>
+                    </td>
+                </tr>
             </div>
     </v-container>
 </template>
@@ -38,7 +47,7 @@ export default {
             .then((resposta) => resposta.json())
             .then((json) => {
                 this.dadosAPI = json;
-                //console.log(this.dadosAPI);
+                console.log(this.dadosAPI);
             });
     },
 }
