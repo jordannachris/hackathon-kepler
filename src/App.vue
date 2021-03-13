@@ -11,9 +11,8 @@
 import Home from './views/Home'
 
 export default {
-  components: { Home },
-  name: 'App',
   name: 'Home',
+  components: { Home },
 
   data: () => ({
     //
