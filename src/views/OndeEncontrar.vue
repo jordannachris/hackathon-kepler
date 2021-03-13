@@ -17,10 +17,11 @@
                         v-for="dado of dadosAPI"
                         :key="dado.id"
                         >
-                        <v-list-item-title>{{ [0].nome }}</v-list-item-title>
+                            <v-list-item-title>{{ dado.local.endereco }}</v-list-item-title>
                         </v-list-item>
                     </v-list>
                 </v-menu>
+                
             </div>
     </v-container>
 </template>
@@ -38,7 +39,7 @@ export default {
             .then((resposta) => resposta.json())
             .then((json) => {
                 this.dadosAPI = json;
-                console.log(this.dadosAPI);
+                //console.log(this.dadosAPI);
             });
     },
 }
