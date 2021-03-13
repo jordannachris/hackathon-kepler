@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import OndeEncontrar from '../views/OndeEncontrar.vue'
+import Manaus from '../views/Manaus.vue'
 import Sobre from '../views/Sobre.vue'
 import RioBranco from '../views/RioBranco.vue'
 import Macapa from '../views/Macapa.vue'
@@ -16,9 +16,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/ondeencontrar',
-    name: 'OndeEncontrar',
-    component: OndeEncontrar
+    path: '/manaus',
+    name: 'Manaus',
+    component: Manaus
   },
   {
     path: '/sobre',

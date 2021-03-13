@@ -1,35 +1,33 @@
 <template>
   <v-container>
     <div class="text-center rio-branco">
-      <v-col cols="6">
-        <v-card>
+      <v-col cols="">
+        <v-card class="card1">
           <v-img :src="dadosAPI[4].imagem" class="grey darken-4"></v-img>
           <v-card-title class="title">
-            <span>Nome: {{ dadosAPI[4].nome }}</span>
-            <span>Valor: {{ dadosAPI[4].preco }}</span>
-            <span>Valor: {{ dadosAPI[4].preco }}</span>
+            <span>{{ dadosAPI[4].nome }}</span>
+            <span>Valor R$: {{ dadosAPI[4].preco }}</span>
           </v-card-title>
 
           <v-btn>Comprar</v-btn>
         </v-card>
 
-        <v-card>
+        <v-card class="card1">
           <v-img :src="dadosAPI[5].imagem" class="grey darken-4"></v-img>
           <v-card-title class="title">
-            <span>Nome: {{ dadosAPI[5].nome }}</span>
-            <span>Valor: {{ dadosAPI[5].preco }}</span>
-            <span>Valor: {{ dadosAPI[5].preco }}</span>
+            <span> {{ dadosAPI[5].nome }}</span>
+            <span>Valor R$: {{ dadosAPI[5].preco }}</span>
           </v-card-title>
 
           <v-btn>Comprar</v-btn>
         </v-card>
 
-        <v-card>
+        <v-card class="card1">
           <v-img :src="dadosAPI[6].imagem" class="grey darken-4"></v-img>
           <v-card-title class="title">
-            <span>Nome: {{ dadosAPI[6].nome }}</span>
-            <span>Valor: {{ dadosAPI[6].preco }}</span>s
-            <span>Valor: {{ dadosAPI[6].preco }}</span>
+            <span> {{ dadosAPI[6].nome }}</span>
+            <span>Valor R$: {{ dadosAPI[6].preco }}</span>
+            
           </v-card-title>
 
           <v-btn>Comprar</v-btn>
@@ -59,4 +57,15 @@ export default {
 </script>
 
 <style scoped>
+.card1 {
+  width: 5000px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
 </style>

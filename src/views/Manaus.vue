@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div class="text-center ondeencontrar--botaocidades">
+    <div class="text-center manaus">
       <v-col cols="">
         <v-card class="card1">
           <v-img :src="dadosAPI[0].imagem" class="grey darken-4"></v-img>
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "OndeEncontrar",
+  name: "Manaus",
   data() {
     return {
       dadosAPI: [],
