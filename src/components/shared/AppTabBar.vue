@@ -1,22 +1,22 @@
 <template>
   <div class="app-tab-bar">
     <v-bottom-navigation v-model="value">
-      <v-btn value="recent">
-        <span>Recent</span>
+      <v-btn value="home" color="transparent">
+        <span>Início</span>
 
-        <v-icon>mdi-history</v-icon>
+        <v-icon color="#989899">mdi-home</v-icon>
       </v-btn>
 
-      <v-btn value="favorites">
-        <span>Favorites</span>
+      <v-btn value="sobre" color="transparent">
+        <span>Sobre</span>
 
-        <v-icon>mdi-heart</v-icon>
+        <v-icon color="#989899">mdi-information</v-icon>
       </v-btn>
 
-      <v-btn value="nearby">
+      <v-btn value="onde-encontrar" color="transparent">
         <span>Nearby</span>
 
-        <v-icon>mdi-map-marker</v-icon>
+        <v-icon color="#989899">mdi-cart</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </div>
@@ -31,5 +31,10 @@ export default {
 };
 </script>
 
+
 <style scoped>
+.app-tap-bar {
+  text-decoration: none;
+}
+
 </style>
