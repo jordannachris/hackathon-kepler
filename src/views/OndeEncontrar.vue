@@ -43,20 +43,8 @@ export default {
   data() {
     return {
       dadosAPI: [],
-      // variavel:
-      itens: [
-        { title: "Manaus" },
-        { title: "Rio Branco" },
-        { title: "Macapá" },
-      ],
     };
   },
-  //   computed: {
-  //       endereco() {
-  //           const possui = this.dadosAPI[0].local.endereco[1];
-  //           console.log(possui);
-  //       }
-  //   },
   created() {
     fetch("https://it3kjy-default-rtdb.firebaseio.com/ovosPascoa.json")
       .then((resposta) => resposta.json())
@@ -65,12 +53,6 @@ export default {
         // console.log(this.dadosAPI);
       });
   },
-  //   methods: {
-  //     getCidade() {
-  //         this.cidade = item.title;
-  //         console.log(this.cidade);
-  //     },
-  //   },
 };
 </script>
 

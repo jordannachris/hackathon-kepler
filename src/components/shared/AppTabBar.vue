@@ -15,9 +15,9 @@
         </v-btn>
       </router-link>
 
-      <router-link to="/ondeencontrar">
+      <router-link to="/localidade">
         <v-btn value="onde-encontrar" color="transparent" >
-          <span>Onde Comprar</span>
+          <span>Localidade</span>
           <v-icon color="#989899">mdi-cart</v-icon>
         </v-btn>
       </router-link>
