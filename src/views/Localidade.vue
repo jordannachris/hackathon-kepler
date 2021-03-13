@@ -50,5 +50,10 @@ export default {
 
     .btns {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .btns a {
+        text-decoration: none;
     }
 </style>
