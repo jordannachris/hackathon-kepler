@@ -2,21 +2,21 @@
   <div class="app-tab-bar">
     <v-bottom-navigation v-model="value">
       <v-btn value="recent">
-        <span>Recent</span>
+        <span>Início</span>
 
-        <v-icon>mdi-history</v-icon>
+        <v-icon>mdi-home</v-icon>
       </v-btn>
 
       <v-btn value="favorites">
-        <span>Favorites</span>
+        <span>Sobre</span>
 
-        <v-icon>mdi-heart</v-icon>
+        <v-icon>mdi-information</v-icon>
       </v-btn>
 
       <v-btn value="nearby">
         <span>Nearby</span>
 
-        <v-icon>mdi-map-marker</v-icon>
+        <v-icon>mdi-rabbit</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </div>
